@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>菲麦前端</title>
+    <style>
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {padding: 0;margin: 0;}
+        .flex{display: flex;}
+        .container{  width:100%;
+                     height: auto;
+                     flex-wrap: wrap;}
+         .head{ width: 100%;
+                height: 120px;
+                box-sizing:border-box;
+                padding-left: 150px;
+                padding-right: 150px;
+                align-items: center;
+                justify-content: flex-start;}
+        .logo{margin-top: 30px;}
+        .list{ list-style: none;
+               margin-left: 450px;
+               display: flex;}
+        .list li{flex: 1;margin-left: 60px;}
+        a{text-decoration: none;}
+        .font{color: #a87b4f;
+              font-size: 20px;}
+        .top{width: 100%;
+             height:300px;
+             background-color: #a87b4f;
+             align-items: center;
+             box-sizing:border-box;
+             padding-left: 150px;
+             justify-content: space-between;}
+        .dis{margin-left: 360px;}
+        .content{ box-sizing:border-box;
+                  width:960px;
+                  height: auto;
+                  margin-left: 150px;
+                  margin-right: 220px;
+                  flex-wrap: nowrap;}
+        .left{ width: 720px;
+               height: 800px;}
+        .right{width: 240px;
+               height: 300px;
+               margin-top: 30px;
+               padding-left: 20px;}
+        .tit{  width: 100%;
+               height: 61px;
+               font-size: 30px;
+               color: #a87b4f;
+               border-bottom: solid 1px #CCCCCC;
+               align-items: center;}
+        .article{ margin-top: 30px;
+                  height: 150px;
+                  border-bottom: 1px dashed  #CCCCCC;
+                  justify-content: space-between;}
+        .article-left{width: 550px;
+                      height: 150px;
+                      box-sizing: border-box;}
+        .font2{ color: black;
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 10px;}
+        .font3{ color: #333333;
+                font-size: 14px;
+                line-height: 20px;}
+        .example{ height: 240px;
+                  width: 100%;
+                 box-sizing: border-box;
+                 padding-top: 30px;
+                 justify-content: space-between;}
+        .state{ width: 100%;
+                height: 40px;
+                padding-bottom: 30px;
+                justify-content: space-between;
+                border-bottom: 1px dashed  #CCCCCC; }
+        .state-list{ width: 200px;
+                     height: 30px;
+                     font-size: 18px;
+                     line-height: 30px;
+                     font-weight: bold;
+                     text-align: center;}
+        .right-list{ margin-bottom: 30px;}
+        .tools{ width: 100%;
+                height: 260px;
+                justify-content: space-between;
+                align-items: center;}
+        .tools-list{ width: 200px;
+                     height: 200px;
+                     color: #a87b4f;
+                     font-size: 20px;
+                     justify-content: center;
+                     align-items: center;
+                     border: 1px solid #d0d0d0;
+                     background-color: #f0f0f0;}
+        footer{ width: 960px;
+                height: 100px;
+                margin-top: 50px;}
+        .foot-content{align-items: center;
+                      justify-content: center;
+                      font-weight: 100;}
+    </style>
+
+</head>
+<body>
+<div class="container flex">
+    <header class="flex head">
+        <img class="logo" src="images/logo.png" alt=""/>
+        <ul class="list">
+            <li><a class="font" href="">主页</a></li>
+            <li><a class="font" href="">博客</a></li>
+            <li><a class="font" href="">案列</a></li>
+            <li><a class="font" href="">关于</a></li>
+        </ul>
+    </header>
+    <br/>
+    <div class="top flex">
+        <div class="title">
+            <img src="images/title.png" alt=""/>
+            <img class="dis" src="images/ma.png" alt=""/>
+        </div>
+    </div>
+    <div class="content flex">
+        <div class="left">
+            <p class="tit flex">热门文章>></p>
+            <div class="article flex">
+                <div class="article-left">
+                    <h3><a class="font2" href="">从零打造在线版h5页面生成器</a></h3><br/>
+                    <p class="font3">想必你一定使用过易企秀或其他微场景生成工具制作过炫酷的h5页面，除了感叹其神奇之处
+                    有没有想过其实现方式呢？从设计者的角度来看待问题，会有不一样的收获，本文将从零开始，使用no...</p>
+                </div>
+                <div class="article-right">
+                    <img src="images/1.png" alt=""/>
+                </div>
+            </div>
+            <div class="article flex">
+                <div class="article-left">
+                    <h3><a class="font2" href="">从零打造在线版h5页面生成器</a></h3><br/>
+                    <p class="font3">想必你一定使用过易企秀或其他微场景生成工具制作过炫酷的h5页面，除了感叹其神奇之处
+                        有没有想过其实现方式呢？从设计者的角度来看待问题，会有不一样的收获，本文将从零开始，使用no...</p>
+                </div>
+                <div class="article-right">
+                    <img src="images/2.png" alt=""/>
+                </div>
+            </div>
+            <div class="article flex">
+                <div class="article-left">
+                    <h3><a class="font2" href="">从零打造在线版h5页面生成器</a></h3><br/>
+                    <p class="font3">想必你一定使用过易企秀或其他微场景生成工具制作过炫酷的h5页面，除了感叹其神奇之处
+                        有没有想过其实现方式呢？从设计者的角度来看待问题，会有不一样的收获，本文将从零开始，使用no...</p>
+                </div>
+                <div class="article-right">
+                    <img src="images/3.png" alt=""/>
+                </div>
+            </div>
+            <p class="tit flex">案列展示>></p>
+            <div class="example flex">
+                <img src="images/eg.png" alt=""/>
+                <img src="images/eg.png" alt=""/>
+                <img src="images/eg.png" alt=""/>
+            </div>
+           <div class="state flex">
+               <p class="state-list">菲麦前端</p>
+               <p class="state-list">菲麦前端</p>
+               <p class="state-list">菲麦前端</p>
+           </div>
+            <p class="tit flex">工具平台</p>
+            <div class="tools flex">
+                <div class="tools-list flex">h5在线生成工具</div>
+                <div class="tools-list flex">...</div>
+                <div class="tools-list flex">...</div>
+            </div>
+            <footer class="flex">
+                <p class="foot-content">© 2017 facemagic888. All Rights Reserved.</p>
+            </footer>
+        </div>
+        <div class="right">
+            <div class="right-list">
+                <p>枯藤老树昏鸦 枯藤老树昏鸦 </p>
+                <p>小桥流水人家 小桥流水人家</p>
+                <p>孤岛西风瘦马 孤岛西风瘦马</p>
+                <p>夕阳西下 夕阳西下  </p>
+                <p>断肠人在天涯</p>
+            </div>
+            <div class="right-list">
+                <p>枯藤老树昏鸦 枯藤老树昏鸦 </p>
+                <p>小桥流水人家 小桥流水人家</p>
+                <p>孤岛西风瘦马 孤岛西风瘦马</p>
+                <p>夕阳西下 夕阳西下  </p>
+                <p>断肠人在天涯</p>
+            </div>
+            <div class="right-list">
+                <p>枯藤老树昏鸦 枯藤老树昏鸦 </p>
+                <p>小桥流水人家 小桥流水人家</p>
+                <p>孤岛西风瘦马 孤岛西风瘦马</p>
+                <p>夕阳西下 夕阳西下  </p>
+                <p>断肠人在天涯</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
