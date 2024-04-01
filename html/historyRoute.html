@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>history模式 Router</h3>
+        <ul>
+            <li><a href="/home">home</a></li>
+            <li><a href="/about">about</a></li>
+            <div id="routeView"></div>
+        </ul>
+    </body>
+    <script>
+        // 该模式不能跨域，出现跨域，会提示
+        // Uncaught DOMException: Failed to execute 'pushState' on 'History': A history state object with URL
+        // 可通过http-server启动一个服务
+        window.addEventListener('DOMContentLoaded', onLoad)
+        window.addEventListener('propstate', onPropState)
+        let routeView = null
+        function onLoad() {
+            routerView = document.querySelector('#routeView')
+            // 拦截a标签默认点击行为
+            const linkList = document.querySelectorAll('a[href]')
+            linkList.forEach((el) => {
+                el.addEventListener('click', function (e) {
+                    e.preventDefault()
+                    history.pushState(null, '', el.getAttribute('href'))
+                    onPropState()
+                })
+            })
+        }
+
+        // 路由变化时，根据路由渲染对应ui
+        function onPropState() {
+            switch (location.pathname) {
+                case '/home':
+                    routerView.innerHTML = 'home'
+                    break
+                case '/about':
+                    routerView.innerHTML = 'about'
+                    break
+            }
+        }
+    </script>
+</html>
